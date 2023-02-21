@@ -88,5 +88,5 @@
 ### 3. status
 Статус код запроса.
 
-<a href="/help/articles" class="button">API статей</a>
-<a href="/help/products" class="button">API продуктов</a>
+<a href="/articles" class="button">API статей</a>
+<a href="/products" class="button">API продуктов</a>

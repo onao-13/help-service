@@ -105,5 +105,5 @@
 ### 3. status
 Статус код запроса.
 
-<a href="/help/" class="button">Главная</a>
-<a href="/help/articles" class="button">API статей</a>
+<a href="/" class="button">Главная</a>
+<a href="/articles" class="button">API статей</a>

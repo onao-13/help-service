@@ -123,4 +123,4 @@
 #### status
 Статус код запроса.
 
-<a href="/help/categories" class="button">API категорий</a>
+<a href="/categories" class="button">API категорий</a>

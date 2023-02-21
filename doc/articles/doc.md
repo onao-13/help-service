@@ -39,5 +39,5 @@
 #### status
 Статус код запроса.
 
-<a href="/help/home-page" class="button">API главной страницы</a>
-<a href="/help/categories" class="button">API категорий</a>
+<a href="/home-page" class="button">API главной страницы</a>
+<a href="/categories" class="button">API категорий</a>

@@ -13,7 +13,7 @@ var log = logrus.New()
 
 func UploadDevConfig() Config {
 	v := viper.New()
-	v.SetDefault("PORT", "8082")
+	v.SetDefault("PORT", "8088")
 
 	var c Config
 

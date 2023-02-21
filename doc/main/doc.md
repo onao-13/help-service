@@ -28,9 +28,9 @@
 <input type="checkbox" disabled /> отправка отзыва
 
 ## Документация 
-1. [API главной страницы](/help/home-page)
-2. [API статей](/help/articles)
-3. [API категорий](/help/categories)
-4. [API продуктов](/help/products)
+1. [API главной страницы](/home-page)
+2. [API статей](/articles)
+3. [API категорий](/categories)
+4. [API продуктов](/products)
 
-<a href="/help/home-page" class="btn">API главной страницы</a>
+<a href="/home-page" class="btn">API главной страницы</a>
