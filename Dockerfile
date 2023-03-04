@@ -22,3 +22,4 @@ ENTRYPOINT ["/help-service"]
 # STAGE 3: COPY STATIC FILES
 COPY doc ./doc
 COPY assets ./assets
+COPY config ./config

@@ -12,29 +12,32 @@ type Config struct {
 var log = logrus.New()
 
 func UploadDevConfig() Config {
-	v := viper.New()
-	v.SetDefault("PORT", "8088")
-
-	var c Config
-
-	err := v.Unmarshal(&c)
-	if err != nil {
-		log.Fatalln("Config unmarshal. Error: ", err)
-	}
-
-	return c
+	return loadConfig("dev")
 }
 
 func UploadProdConfig() Config {
+	return loadConfig("prod")
+}
+
+func loadConfig(configName string) Config {
 	v := viper.New()
-	v.SetDefault("PORT", "8082")
+	v.AddConfigPath("config")
+	v.SetConfigName(configName)
+	v.SetConfigType("env")
 
-	var c Config
+	v.AutomaticEnv()
 
-	err := v.Unmarshal(&c)
+	err := v.ReadInConfig()
+	if err != nil {
+		log.Fatalln("Error reading config file. Error: ", err)
+	}
+
+	var config Config
+
+	err = v.Unmarshal(&config)
 	if err != nil {
 		log.Fatalln("Config unmarshal. Error: ", err)
 	}
 
-	return c
+	return config
 }
